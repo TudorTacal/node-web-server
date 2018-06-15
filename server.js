@@ -50,6 +50,12 @@ app.get('/about', (req, res) => {
   });
 })
 
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio.hbs', {
+    pageTitle: 'My Portfolio'
+  });
+})
+
 app.get('/bad', (req, res) => {
   res.send({
     error: 'Unable to fullfil request'
